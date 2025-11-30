@@ -1,22 +1,25 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f5f5;
-    color: #333;
+    background: #121212;
+    color: #e0e0e0;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
+
 :root {
-    --bg-card: #ffffff;
-    --border-card: #e0e0e0;
-    --accent: #007e7a;  
-    --accent-light: #00bdb6;
-    --text-light: #fff;
-    --text-dark: #333;
+    --bg-card: #1e1e1e;
+    --border-card: #333333;
+    --accent: #458aa5;  
+    --accent-light: #9ce3ff;
+    --text-light: #ffffff;
+    --text-dark: #e0e0e0;
 }
+
 .container {
     width: 100%;
     max-width: 1000px;
@@ -24,62 +27,71 @@ body {
     border: 1px solid var(--border-card);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
+
 header {
     text-align: center;
     padding: 20px;
     background: var(--accent);
 }
+
 header h1 {
     font-size: 2.8rem;
     color: var(--text-light);
     letter-spacing: 2px;
 }
+
 header .creator {
     margin-top: 6px;
     color: var(--accent-light);
     font-size: 1rem; 
     letter-spacing: 3px;
 }
+
 /* LAYOUT */
 .generator {
     display: flex;
     flex-wrap: wrap;
 }
+
 .input-section,
 .output-section {
     flex: 1;
     min-width: 280px;
     padding: 20px;
 }
+
 .input-section textarea {
     width: 100%;
     height: calc(100vh - 260px);
     max-height: 500px;
-    background: #fafafa;
+    background: #1e1e1e;
     border: 2px solid var(--border-card);
     border-radius: 8px;
     padding: 15px;
-    color: var(--text-dark);
+    color: var(--text-light);
     font-size: 1.1rem;
     resize: vertical;
     transition: border-color 0.3s ease;
 }
+
 .input-section textarea:focus {
     border-color: var(--accent);
     outline: none;
-    box-shadow: 0 0 10px rgba(0,255,245,0.2);
+    box-shadow: 0 0 10px rgba(152, 243, 255, 0.473);
 }
+
 /* OUTPUT CARDS */
 .out-card {
-    background: #fafafa;
+    background: #1e1e1e;
     border: 1px solid var(--border-card);
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
+
 .out-card h2 {
     font-size: 1.4rem;
     color: var(--accent);
@@ -88,20 +100,22 @@ header .creator {
     justify-content: space-between;
     align-items: center;
 }
+
 .out-card .output-area {
-    background: #fff;
+    background: #121212;
     border-radius: 6px;
     padding: 12px;
     min-height: 80px;
     font-size: 1.1rem;
     line-height: 1.6;
-    color: var(--text-dark);
+    color: var(--text-light);
     white-space: pre-wrap;
     word-break: break-word;
     max-height: 200px;
     overflow-y: auto;
     border: 1px solid var(--border-card);
 }
+
 .copy-btn {
     background: var(--accent);
     color: var(--text-light);
@@ -112,18 +126,21 @@ header .creator {
     cursor: pointer;
     transition: background 0.3s ease;
 }
+
 .copy-btn:hover {
     background: var(--accent-light);
 }
+
 /* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
     font-size: 0.85rem;
-    color: #777;
+    color: #aaa;
     border-top: 1px solid var(--border-card);
-    background: #fff;
+    background: #1e1e1e;
 }
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     header h1 { font-size: 2.2rem; }
