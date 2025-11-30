@@ -95,5 +95,5 @@ This project is licensed under the **MIT License**.
 
 ## 🔗 Links
 
-- **Live Demo:** [Small Text Generator](https://zarscape.github.io/small-text-generator/)  
+- **Live Demo:** [Small Text Generator](https://zarscape.github.io/Small-Text-Generator/)  
 - **GitHub Repo:** [Small-Text-Generator](https://github.com/ZarScape/Small-Text-Generator)
