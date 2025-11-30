@@ -76,16 +76,6 @@ git clone https://github.com/ZarScape/Small-Text-Generator.git
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-- Report bugs  
-- Suggest improvements  
-- Submit pull requests  
-
----
-
 ## 📜 License
 
 This project is licensed under the **MIT License**.  
